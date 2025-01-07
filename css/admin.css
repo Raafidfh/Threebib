@@ -1,0 +1,253 @@
+/* admin.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ff1493; /* Warna latar belakang */
+}
+
+header {
+  background-color: #24191f; /* Warna header */
+  height: 100vh; /* Tinggi header */
+  width: 220px; /* Lebar sidebar */
+  position: fixed; /* Memastikan sidebar tetap di tempat */
+}
+
+.title {
+  padding: 10px; /* Jarak padding title */
+}
+
+.title h1 {
+  font-family: "Lobster", cursive; /* Font yang menarik untuk logo */
+  font-size: 3rem;
+  color: #ff69b4; /* Warna pink muda */
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column; /* Mengatur navbar vertikal */
+}
+
+.nav-list {
+  padding: 15px; /* Jarak dalam sidebar */
+  
+}
+
+.nav-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list ul li {
+  margin: 10px 0;
+}
+
+.nav-list ul li a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  color: #ff69b4; 
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-list ul li a:hover,
+.nav-list ul li a.active {
+  background-color: #ff1493; /* Pink lebih gelap untuk state aktif/hover */
+  color: white; /* Teks putih untuk kontras */
+}
+
+.logout {
+  margin-top: auto; /* Mengatur logout ke bawah */
+  padding: 10px;
+}
+
+.logout a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background-color: #ff1493; /* Warna tombol logout */
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.logout a:hover {
+  background-color: #f1ebef; /* Warna lebih gelap saat hover */
+  color: white;
+}
+
+main {
+  margin-left: 240px; /* Ruang untuk sidebar */
+  padding: 60px;
+  color: white; /* Warna teks di dalam main */
+}
+
+/* Gaya untuk artikel welcome */
+.welcome {
+  margin-top: 20px; /* Top margin */
+}
+
+.welcome .container {
+  background: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.welcome .desc {
+  text-align: center;
+}
+
+.welcome h1 {
+  color: #ff69b4; /* Pink title color */
+  font-size: 2.5rem;
+}
+
+.welcome p {
+  color: #333333; /* Darker text color for contrast */
+  font-size: 1.1em; /* Instruction text size */
+  margin-top: 10px; /* Top margin for instructions */
+}
+/* Welcome article styles */
+.welcome .option {
+  margin-top: 20px;
+}
+
+.welcome ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  list-style: none; /* Remove list styling */
+}
+
+.welcome ul li {
+  flex: 1 1 calc(25% - 20px);
+  max-width: calc(25% - 20px);
+}
+
+.welcome ul li .btn {
+  background: #ff1493; /* Button background */
+  padding: 20px 30px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, border 0.3s;
+  text-align: center;
+  font-size: 1.2em;
+  color: #fff; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Pointer cursor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for button effect */
+}
+
+.welcome ul li .btn i {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.welcome ul li .btn:hover {
+  background: #ff69b4; /* Pink background on hover */
+  border-color: #ff1493; /* Darker border on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.welcome ul li .btn:hover i {
+  color: #ffffff; /* White icon color on hover */
+}
+
+.welcome ul li .btn:hover {
+  color: #ffffff; /* White text on hover */
+}
+
+/* Gaya untuk artikel tabel */
+.table {
+  margin-top: 20px;
+}
+
+.table .container {
+  background: #ffffff; /* White background for container */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for container */
+}
+
+.table .tambah {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.table .tablename h1 {
+  color: #ff69b4; /* Light pink color for table name */
+}
+
+.table .insert a {
+  background-color: #ff69b4; /* Button background */
+  color: white; /* Button text color */
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.table .insert a:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd; /* Border for table */
+  color: #000000;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #ff69b4; /* Header background color */
+  color: white; /* Header text color */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Even row background color */
+}
+
+tbody tr:hover {
+  background-color: #ffebee; /* Hover background color for rows */
+}
+
+.aksi a {
+  text-decoration: none; /* Remove underline from links */
+  color: #ff69b4; /* Link color */
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.aksi a:hover {
+  background-color: #ff69b4; /* Background on hover */
+  color: white; /* Text color on hover */
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #ff69b4; /* Warna footer */
+  color: white;
+}

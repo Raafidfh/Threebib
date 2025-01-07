@@ -1,0 +1,109 @@
+/* crud.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("../img/backgroundlogin.jpg"); /* Sesuaikan path dengan lokasi gambar */
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: "Lobster", cursive; /* Font yang menarik untuk logo */
+  font-size: 36px;
+  color: #ff69b4; /* Warna pink muda */
+  text-align: center;
+  margin-bottom: 20px; /* Jarak bawah */
+}
+
+form ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+form li {
+  margin: 10px 0; /* Jarak antar input */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="file"] {
+  width: calc(100% - 20px); /* Mengurangi lebar dengan padding */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px; /* Jarak bawah untuk input */
+  margin-left: 10px; /* Jarak kiri */
+  margin-right: 10px; /* Jarak kanan */
+}
+
+button {
+  width: calc(100% - 20px); /* Mengurangi lebar dengan padding */
+  padding: 10px;
+  background-color: #ff69b4; /* Warna pink muda */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px; /* Jarak kiri */
+  margin-right: 10px; /* Jarak kanan */
+}
+
+button:hover {
+  background-color: #ff1493; /* Warna pink lebih gelap saat hover */
+}
+
+a {
+  text-decoration: none;
+  color: #ff69b4; /* Warna pink muda */
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+a:hover {
+  color: #ff1493; /* Warna pink lebih gelap saat hover */
+}
+
+.img-preview {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.img-preview img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 500px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
